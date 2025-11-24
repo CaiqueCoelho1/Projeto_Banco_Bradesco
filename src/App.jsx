@@ -8,8 +8,7 @@ import Denunciar from "./pages/Denunciar";
 import PainelUsuario from "./pages/PainelUsuario";
 
 export default function App() {
-  return (
-    <BrowserRouter>
+  return (<>
       <Navbar />
       <div className="p-6">
         <Routes>
@@ -21,6 +20,6 @@ export default function App() {
           <Route path="/cadastro" element={<Cadastro />} />
         </Routes>
       </div>
-    </BrowserRouter>
+      </>
   );
 }
